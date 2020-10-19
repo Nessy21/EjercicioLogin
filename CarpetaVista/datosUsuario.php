@@ -10,8 +10,6 @@
       
         $user = $_GET['user'];
         $password = $_GET['password'];
-    
-        
     ?>
 </body>
 </html>

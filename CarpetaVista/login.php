@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<!--por aqui tambien va la cookie :D-->
 <body>
     <?php
         $cont=1;
-        if(!isset($_COOKIE['numvisitas'])){//creamos una cookie en caso de que no haya
+        if(!isset($_COOKIE['numvisitas'])){
             setcookie('numvisitas', $cont, time()+60);
         }else{
             $cont=$_COOKIE['numvisitas'];
-            
         }
-
-        
 
         if($cont==4){
             echo "demasiados intentos...vuelva a intentarlo más tarde";
@@ -33,7 +29,5 @@
         </form>';
         }
     ?>
-    <!--contador de veces que ha fallado el login aquí-->
-   
 </body>
 </html>
