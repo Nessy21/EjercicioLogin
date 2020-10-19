@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-     <h1>La contraseña o el usuario no coinciden</h1>
+    <h1>La contraseña o el usuario no coinciden</h1>
+    <a href="login.php">Inicio</a>
 </body>
 </html>
