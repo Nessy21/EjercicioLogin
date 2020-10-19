@@ -18,6 +18,7 @@
             echo "demasiados intentos...vuelva a intentarlo más tarde";
         }else{
             echo $cont."<br>";
+            
             echo ' <form action="autenticar.php" method="POST">
             <label for="user">Usuario:</label>
             <input type="text" name="user" id="user" placeholder="Introduce tu usuario...">
