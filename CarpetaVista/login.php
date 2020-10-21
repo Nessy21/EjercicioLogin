@@ -7,7 +7,12 @@
 </head>
 <body>
     <?php
+        session_start();
+        if(isset($_SESSION['datosUser'])){
+            header("Location: datosUsuario.php");
+        }
         $cont=1;
+
         if(!isset($_COOKIE['numvisitas'])){
             setcookie('numvisitas', $cont, time()+60);
         }else{

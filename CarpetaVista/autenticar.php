@@ -13,8 +13,11 @@
 
     //redireccionar
      if ($resultado!=false){
+        session_start();
+        $_SESSION['datosUser'] = $resultado;
+
         setcookie('numvisitas', $cont, time()+60);
-        header ("Location: datosUsuario.php?user=$user&password=$password");
+        header ("Location: datosUsuario.php?");//user=$user&password=$password para que se vea en la URL 
      }else{
          $cont=1;
         if(!isset($_COOKIE['numvisitas'])){//creamos una cookie en caso de que no haya
